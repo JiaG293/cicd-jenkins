@@ -2,10 +2,14 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '3.4.1'
     id 'io.spring.dependency-management' version '1.1.7'
+    id 'com.google.cloud.tools.jib' version '3.4.4'
 }
 
 group = 'com'
 version = '0.0.1-SNAPSHOT'
+
+jib.to.image = 'jiag293/cicdjenkins'
+jib.to.tags = [version, 'latest']
 
 java {
     toolchain {
