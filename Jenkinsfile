@@ -9,9 +9,10 @@ pipeline {
     }
 
     stages {
+
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/JiaG293/cicd-jenkins.git'
+                git 'https://github.com/JiaG293/cicd-jenkins.git/'
             }
         }
 
