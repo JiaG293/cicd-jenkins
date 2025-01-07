@@ -4,8 +4,8 @@ pipeline {
     environment {
         DOCKER_IMAGE = 'cicd-jenkins'
         DOCKER_TAG = 'latest'
-        DOCKER_USERNAME = credentials('docker-username')
-        DOCKER_PASSWORD = credentials('docker-password')
+//         DOCKER_USERNAME = credentials('docker-username')
+//         DOCKER_PASSWORD = credentials('docker-password')
     }
 
     stages {
