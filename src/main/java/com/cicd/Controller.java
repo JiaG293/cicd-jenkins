@@ -21,7 +21,7 @@ public class Controller {
         var userName = System.getProperty("user.name");
         var serverPort = environment.getProperty("server.port");
 
-        var message = "<h1>Hello, Jenkins!</h1> <p>Java Version: %s</p> <p>OS Name: %s</p> <p>OS Version: %s</p> <p>Server Port: %s</p> <p>Logged-in User: %s</p>";
+        var message = "<h1>Hello, Jenkins!</h1> <p>Java Version: %s</p> <p>OS Name: %s</p> <p>OS Version: %s</p> <p>Server Port: %s</p> <p>Logged-in User: %s</p> <p>Hiệp Gà</p>";
 
         return message.formatted(javaVersion, osName, osVersion, serverPort, userName);
 
