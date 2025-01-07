@@ -12,8 +12,8 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/JiaG293/cicd-jenkins.git/'
-            }
+                    git branch: 'main', url: 'https://github.com/JiaG293/cicd-jenkins.git'
+                }
         }
 
         stage('Build Docker Image') {
@@ -33,7 +33,7 @@ pipeline {
 //                     buoc dung va xoa container (tuong duong 2 lenh tren)
                     sh 'docker rm -f $DOCKER_IMAGE || true'
 
-                    sh 'docker run -name $DOCKER_IMAGE -d -p 8888:8888 $DOCKER_IMAGE:$DOCKER_TAG'
+                    sh 'docker run --name $DOCKER_IMAGE -d -p 8888:8888 $DOCKER_IMAGE:$DOCKER_TAG'
                 }
             }
         }
