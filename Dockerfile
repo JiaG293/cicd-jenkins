@@ -3,7 +3,7 @@ LABEL authors="jiag293"
 WORKDIR /app
 COPY . .
 
-RUN ./gradlew build
+RUN chmod +x gradlew && ./gradlew build -x test
 
 
 FROM eclipse-temurin:21-jre AS production
