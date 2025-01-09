@@ -43,7 +43,7 @@ docker run \
 --publish 50000:50000 \
 --volume jenkins_home:/var/jenkins_home \
 --volume jenkins_docker_certs:/certs/client:ro \
-jenkins-docker:lts-jdk21
+jenkins-app:lts-jdk21
 ```
 
 ---
