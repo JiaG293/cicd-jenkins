@@ -9,7 +9,7 @@ COPY gradle /app/gradle
 RUN chmod +x gradlew && ./gradlew build || return 0
 COPY . .
 
-RUN ./gradlew build -x test
+RUN chmod +x gradlew && ./gradlew build -x test
 
 
 FROM eclipse-temurin:21-jre AS production
