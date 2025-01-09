@@ -65,7 +65,7 @@ docker run \
 --env DOCKER_TLS_CERTDIR=/certs \
 --volume jenkins_docker_certs:/certs/client \
 --volume jenkins_home:/var/jenkins_home \
--p 8888:8888 \ #port expose from spring bot application
+-p 8888:8888 \
 --publish 2376:2376 \
 docker:dind \
 --storage-driver overlay2
