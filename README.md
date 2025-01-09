@@ -31,6 +31,10 @@ docker build -t jenkins-app:lts-jdk21 .
 <br>
 
 ```shell
+docker network create jenkins
+```
+
+```shell
 docker run \
 --name jenkins-app \
 --restart=on-failure \
