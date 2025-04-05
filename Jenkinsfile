@@ -4,7 +4,6 @@ pipeline {
     environment {
         DOCKER_IMAGE = 'cicd-jenkins'
         DOCKER_TAG = 'latest'
-        DOCKER_HOST = 'tcp://host.docker.internal:2375'
 //         DOCKER_USERNAME = credentials('docker-username')
 //         DOCKER_PASSWORD = credentials('docker-password')
     }
